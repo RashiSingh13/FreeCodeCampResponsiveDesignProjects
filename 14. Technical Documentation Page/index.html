@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <header class="border title">
+        Data Structures and Algorithms Documentation
+      </header>
+      <nav id="navbar">
+        <header>
+          <ul>
+            <a class="nav-link" href="#Introduction">
+              <li class="border">Introduction</li>
+            </a>
+
+            <a class="nav-link" href="#DSTypes">
+              <li class="border">DSTypes</li>
+            </a>
+
+            <a class="nav-link" href="#ArrayList">
+              <li class="border">ArrayList</li>
+            </a>
+
+            <a class="nav-link" href="#StackQueues">
+              <li class="border">StackQueues</li>
+            </a>
+
+            <a class="nav-link" href="#TreeGraph">
+              <li class="border">TreeGraph</li>
+            </a>
+
+            <a class="nav-link" href="#Algorithm">
+              <li class="border">Algorithm</li>
+            </a>
+
+            <a class="nav-link" href="#Reference">
+              <li class="border">Reference</li>
+            </a>
+          </ul>
+        </header>
+      </nav>
+    </div>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header class="title">Introduction</header>
+        <p>
+          DSA is about finding efficient ways to store and retrieve data, to
+          perform operations on data, and to solve specific problems. By
+          understanding DSA, you can: Decide which data structure or algorithm
+          is best for a given situation.
+        </p>
+        <p>A data structure is a way to store data.</p>
+        <p>
+          We structure data in different ways depending on what data we have,
+          and what we want to do with it.
+        </p>
+        <p>The topic of DSA consists of two parts: :</p>
+        <ul>
+          <li>Data Structures</li>
+          <li>Algorithms</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="DSTypes">
+        <header class="title">DSTypes</header>
+        <p>
+          Data structures are essential components that help organize and store
+          data efficiently in computer memory.
+        </p>
+        <p>
+          They provide a way to manage and manipulate data effectively, enabling
+          faster access, insertion, and deletion operations.
+        </p>
+        <h6>Types of Data Structures:</h6>
+        <ol>
+          <li>Array</li>
+          <li>Linked List</li>
+          <li>Stack</li>
+          <li>Queue</li>
+          <li>Tree</li>
+          <li>Graph</li>
+        </ol>
+      </section>
+
+      <section class="main-section" id="ArrayList">
+        <header class="title">ArrayList</header>
+        <h5>Arrays:</h5>
+        <p>An array is a data structure used to store multiple elements.</p>
+        <p>
+          Array is a linear data structure that stores a collection of elements
+          of the same data type.
+        </p>
+        <p>
+          Elements are allocated contiguous memory, allowing for constant-time
+          access. Each element has a unique index number.
+        </p>
+        <h6>Operations on Array:</h6>
+        <ul type="disk">
+          <li>Traversal</li>
+          <li>Insertion</li>
+          <li>Deletion</li>
+          <li>Searching</li>
+        </ul>
+        <h5>Example:</h5> <code>my_array = [7, 12, 9, 4, 11]
+          minVal = my_array[0]
+          
+          for i in my_array:
+              if i < minVal:
+                  minVal = i
+          
+          print('Lowest value:',minVal)</code>
+        <h5>Linked Lists:</h5>
+        <p>
+          A linked list is a linear data structure that stores data in nodes,
+          which are connected by pointers.
+        </p>
+        <p>
+          Unlike arrays, linked lists are not stored in contiguous memory
+          locations.
+        </p>
+        <p>Linked lists can be easily resized by adding or removing nodes.</p>
+        <h6>Types of Linked Lists:</h6>
+        <ol type="a">
+          <li>
+            Singly Linked List:
+            <p>Each node points to the next node in the list.</p>
+          </li>
+          <li>
+            Doubly Linked List:
+            <p>
+              Each node points to both the next and previous nodes in the list.
+            </p>
+          </li>
+          <li>
+            Circular Linked List:
+            <p>
+              The last node points back to the first node, forming a circular
+              loop.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="main-section" id="StackQueues">
+        <header class="title">StackQueues</header>
+        <h5>Stack:</h5>
+        <p>
+          Stack is a linear data structure that follows a particular order in
+          which the operations are performed in LIFO(Last In First Out) or
+          FILO(First In Last Out).
+        </p>
+        <p>
+          LIFO implies that the element that is inserted last, comes out first
+          and FILO implies that the element that is inserted first, comes out
+          last.
+        </p>
+        <h6>Operations on Stack:</h6>
+        <ul>
+          <li>Push</li>
+          <li>Pop</li>
+          <li>Peek</li>
+          <li>isEmpty</li>
+          <li>Size</li>
+        </ul>
+
+        <h5>Queue:</h5>
+        <p>
+          A Queue Data Structure is a fundamental concept in computer science
+          used for storing and managing data in a specific order.
+        </p>
+        <p>
+          It follows the principle of “First in, First out” (FIFO), where the
+          first element added to the queue is the first one to be removed
+        </p>
+        <h6>Operations on Queue:</h6>
+        <ul>
+          <li>Enqueue:</li>
+          <p>Adds an element to the rear of the queue.</p>
+          <li>Dequeue:</li>
+          <p>Removes an element from the front of the queue.</p>
+          <li>Peek:</li>
+          <p>Retrieves the front element without removing it.</p>
+          <li>isEmpty:</li>
+          <p>Checks if the queue is empty.</p>
+          <li>isFull:</li>
+          <p>Checks if the queue is full</p>
+        </ul>
+      </section>
+
+      <section class="main-section" id="TreeGraph">
+        <header class="title">TreeGraph</header>
+        <h5>Trees:</h5>
+        <p>
+          A tree is a non-linear hierarchical data structure consisting of
+          nodes.
+        </p>
+        <p>
+          It is connected by edges, with a top node called the root and nodes
+          having child nodes.
+        </p>
+        <p>It is used in computer science for organizing data efficiently.</p>
+        <h6>Types of Trees:</h6>
+        <ol type="a">
+          <li>Binary Tree</li>
+          <li>Binary Search Tree</li>
+          <li>AVL tree</li>
+          <li>B+ Tree</li>
+          <li>Red- Black Tree</li>
+        </ol>
+        <h5>Graphs:</h5>
+        <p>
+          Graph is a non-linear data structure consisting of vertices and edges.
+        </p>
+        <p>It’s used to represent relationships between different entities.</p>
+        <p>
+          Graph data structures are a powerful tool for representing and
+          analyzing complex relationships between objects or entities.
+        </p>
+      </section>
+
+      <section class="main-section" id="Algorithm">
+        <header class="title">Algorithm</header>
+        <ol>
+          <li>
+            Searching Algorithms:
+            <ul type="circle">
+              <li>
+                Linear Search:
+                <p>Iterative search from one end to the other.</p>
+              </li>
+              <h5>Example:</h5><code>def linearSearch(arr, targetVal):
+                for i in range(len(arr)):
+                    if arr[i] == targetVal:
+                        return i
+                return -1
+            
+            arr = [3, 7, 2, 9, 5]
+            targetVal = 9
+            
+            result = linearSearch(arr, targetVal)
+            
+            if result != -1:
+                print("Value",targetVal,"found at index",result)
+            else:
+                print("Value",targetVal,"not found")</code>
+              <li>
+                Binary Search:
+                <p>
+                  Divide-and-conquer search on a sorted array, halving the
+                  search space at each iteration.
+                </p>
+                <h5>Example:</h5>
+                <code>myArray = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+                  myTarget = 15
+                  
+                  result = binarySearch(myArray, myTarget)
+                  
+                  if result != -1:
+                      print("Value",myTarget,"found at index", result)
+                  else:
+                      print("Target not found in array.")</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Sorting Algorithms:
+            <ul type="circle">
+              <li>
+                Bubble Sort:
+                <p>
+                  Iteratively compares adjacent elements and swaps them if they
+                  are out of order. The largest element “bubbles” to the end of
+                  the list with each pass.
+                </p>
+                <h5>Example:</h5><code>my_array = [7, 3, 9, 12, 11]
+
+                  n = len(my_array)
+                  for i in range(n-1):
+                      swapped = False
+                      for j in range(n-i-1):
+                          if my_array[j] > my_array[j+1]:
+                              my_array[j], my_array[j+1] = my_array[j+1], my_array[j]
+                              swapped = True
+                      if not swapped:
+                          break
+                  
+                  print("Sorted array:", my_array)</code>
+              </li>
+              <li>
+                Quick Sort:
+                <p>
+                  A divide-and-conquer algorithm that selects a pivot element,
+                  partitions the list into two sublists based on the pivot, and
+                  recursively applies the same process to the sublists.
+                </p>
+                <h5>Example:</h5><code>my_array = [64, 34, 25, 12, 22, 11, 90, 5]
+                  quicksort(my_array)
+                  print("Sorted array:", my_array)</code>
+              </li>
+              <li>
+                Merge Sort:
+                <p>
+                  Another divide-and-conquer algorithm that recursively divides
+                  the list into smaller sublists, sorts them, and then merges
+                  them back together to obtain the sorted list.
+                </p>
+                <h5>Example:</h5><code>unsortedArr = [3, 7, 6, -10, 15, 23.5, 55, -13]
+                  sortedArr = mergeSort(unsortedArr)
+                  print("Sorted array:", sortedArr)</code>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section class="main-section" id="Reference">
+        <header class="title">Reference</header>
+        <p>
+          You can get more information at
+          <a href="https://www.geeksforgeeks.org/">geeksforgeeks</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
